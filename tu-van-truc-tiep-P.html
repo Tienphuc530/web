@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <section>
+        <a href="/">
+          <h1>Trường PTDTBT TH&THCS Trà Bùi</h1>
+        </a>
+        <h3>Chào mừng các em đến với trang tư vấn tâm lý học đường</h3>
+      </section>
+    </header>
+    <main>
+      <ul>
+        <li>
+          <a href="https://www.facebook.com/profile.php?id=100044321920054">Facebook</a>
+        </li>
+        <li>
+          <a href="tel:0989521586">Gọi SĐT: 0989.521 586</a>
+        </li>
+      </ul>
+
+      <p>
+        <a href="https://www.facebook.com/profile.php?id=100071626311162"> Facebook Cô: Nguyễn Thị Xí
+        </a
+        >
+      </p>
+
+      <p>
+        <a href="https://www.facebook.com/ho.cuc.944"> Facebook Cô: Hồ Thị Cúc
+        </a
+        >
+      </p>
+
+      <p>
+        <a href="https://www.facebook.com/profile.php?id=100044321920054">   Facebook Thầy: Nguyễn Tiến Phúc
+      </a
+        >
+      </p>
+    </main>
+    <footer>
+      <hr />
+      <p>Copyright @ Phuc</p>
+    </footer>
+
+    <a href="#" class="banner-left">
+      <img src="/images/1.jpeg" alt="" />
+    </a>
+    <a href="#" class="banner-right">
+      <img src="/images/2.jpeg" alt="" />
+    </a>
+  </body>
+</html>
+<script>
+  function submitAnswers() {
+    var total = 4;
+    var score = 0;
+
+    //Get user input
+    var q1 = document.forms['quizForm']['q1'].value;
+    var q2 = document.forms['quizForm']['q2'].value;
+    var q3 = document.forms['quizForm']['q3'].value;
+    var q4 = document.forms['quizForm']['q4'].value;
+
+    // Validation
+    for (var i = 1; i <= total; i++) {
+      if (eval('q' + i) === null || eval('q' + i) == '') {
+        alert('You missed question ' + i);
+        return false;
+      }
+    }
+
+    // Set correct answers
+    var answers = ['b', 'd', 'b', 'a'];
+
+    for (var i = 1; i <= total; i++) {
+      // Check answers
+      if (eval('q' + i) == answers[i - 1]) {
+        score++;
+      }
+    }
+
+    // Display results
+    var results = document.getElementById('results');
+    // alert('score: ' + score + ', total: ' + total);
+    if (score < 1) alert('Nho hon 1 cau');
+    else {
+      if (score >= 1) alert('DIem tu 1 - 10: ' + score);
+      else alert('lon hon 10 cau');
+    }
+    // results.innerHTML =
+    //   '<h3>You scored <span>' +
+    //   score +
+    //   '</span> out of <span>' +
+    //   total +
+    //   '</span></h3>';
+    //alert('You scored ' + score + ' out of ' + total);
+
+    return false;
+  }
+</script>

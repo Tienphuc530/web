@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <section>
+        <a href="/">
+          <h1>Trường PTDTBT TH&THCS Trà Bùi</h1>
+        </a>
+        <h3>Chào mừng các em đến với trang tư vấn tâm lý học đường</h3>
+      </section>
+    </header>
+    <main>
+      <ul>
+        <li>
+          <a href="/">Trang chủ</a>
+        </li>
+        <li>
+          <a href="/tu-van-truc-tiep-P.html">Tư vấn trực tiếp</a>
+        </li>
+        <li>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeAcoQFHVWbYff5b7ruHqnZ4YdzYq5QschD8PTGFb_qBuvTtw/viewform?pli=1">Tư vấn gián tiếp</a>
+        </li>
+      </ul>
+      <section>
+        <div id="results"></div>
+        <form name="quizForm" onsubmit="return submitAnswers()">
+
+            <h3>1. Tôi xác định rõ mục tiêu học tập</h3>
+            <input type="radio" name="q1" value="3" />A. Không phù hợp 
+            <br />
+            <input type="radio" name="q1" value="2"  />B.Phù hợp trong một vài trường hợp
+            <br />
+            <input type="radio" name="q1" value="1"  />C.Hoàn toàn phù hợp
+            <br />
+            <br /><br />
+
+          <h3> 2. Tôi luôn xem bài trước khi bắt đầu tiết học</h3>
+          <input type="radio" name="q2" value="3" />A. Không phù hợp 
+          <br />
+          <input type="radio" name="q2" value="2"  />B. Phù hợp trong một vài trường hợp
+          <br />
+          <input type="radio" name="q2" value="1"  />C. Hoàn toàn phù hợp
+          <br />
+          <br /><br />
+
+          <h3>3. Tôi biết cách sàn lọc nội dung chính của bài học</h3>
+          <input type="radio" name="q3" value="3" />A. Không phù hợp 
+          <br />
+          <input type="radio" name="q3" value="2"  />B. Phù hợp trong một vài trường hợp
+          <br />
+          <input type="radio" name="q3" value="1"  />C. Hoàn toàn phù hợp
+          <br />
+          <br /><br />
+
+          <h3>4. Tôi biết cách sắp xếp thời gian và không gian hợp lý cho việc học?</h3>
+          <input type="radio" name="q4" value="3" />A. Không phù hợp 
+          <br />
+          <input type="radio" name="q4" value="2"  />B. Phù hợp trong một vài trường hợp
+          <br />
+          <input type="radio" name="q4" value="1"  />C. Hoàn toàn phù hợp
+          <br />
+          <br /><br />
+
+          <h3> 5. Tôi chủ động tránh xa những tác động gây ảnh hưởng đến học tập?</h3>
+          <input type="radio" name="q5" value="3" />A. Không phù hợp 
+          <br />
+          <input type="radio" name="q5" value="2"  />B. Phù hợp trong một vài trường hợp
+          <br />
+          <input type="radio" name="q5" value="1"  />C. Hoàn toàn phù hợp
+          <br />
+          <br /><br />
+
+          <h3> 6. Tôi tham gia hoạt động nhóm tích cực</h3>
+          <input type="radio" name="q6" value="3" />A. Không phù hợp 
+          <br />
+          <input type="radio" name="q6" value="2"  />B. Phù hợp trong một vài trường hợp
+          <br />
+          <input type="radio" name="q6" value="1"  />C. Hoàn toàn phù hợp
+          <br />
+          <br /><br />
+
+          <h3> 7. Tôi chủ động đặt câu hỏi khi chưa nắm vững kiến thức</h3>
+          <input type="radio" name="q7" value="3" />A. Không phù hợp 
+          <br />
+          <input type="radio" name="q7" value="2"  />B. Phù hợp trong một vài trường hợp
+          <br />
+          <input type="radio" name="q7" value="1"  />C. Hoàn toàn phù hợp
+          <br />
+          <br /><br />
+
+          <h3> 8. Tôi thích giúp đỡ những bạn gặp khó khăn trong học tập</h3>
+          <input type="radio" name="q8" value="3" />A. Không phù hợp 
+          <br />
+          <input type="radio" name="q8" value="2"  />B. Phù hợp trong một vài trường hợp
+          <br />
+          <input type="radio" name="q8" value="1"  />C. Hoàn toàn phù hợp
+          <br />
+          <br /><br />
+
+          <h3> 9. Tôi thích đọc sách, sử dụng máy tính và khám phá Internet để mở rộng kiến thức</h3>
+          <input type="radio" name="q9" value="3" />A. Không phù hợp 
+          <br />
+          <input type="radio" name="q9" value="2"  />B. Phù hợp trong một vài trường hợp
+          <br />
+          <input type="radio" name="q9" value="1"  />C. Hoàn toàn phù hợp
+          <br />
+          <br /><br />
+
+          <h3> 10. Tôi luôn thực hiện tốt học đi đôi với hành</h3>
+          <input type="radio" name="q10" value="3" />A. Không phù hợp 
+          <br />
+          <input type="radio" name="q10" value="2"  />B. Phù hợp trong một vài trường hợp
+          <br />
+          <input type="radio" name="q10" value="1"  />C. Hoàn toàn phù hợp
+          <br />
+          <br /><br />
+
+        <input type="submit" value="Gửi trả lời" />
+        </form>
+    </section>
+    </main>
+
+    <footer>
+      <hr />
+      <p>Copyright @ Phuc</p>
+    </footer>
+
+    <a href="#" class="banner-left">
+      <img src="/images/1.jpeg" alt="" />
+    </a>
+    <a href="#" class="banner-right">
+      <img src="/images/2.jpeg" alt="" />
+    </a>
+  </body>
+</html>
+
+
+
+<script>
+function submitAnswers() {
+  var total = 10;
+  var score = 0;
+
+  //Get user input
+  var q1 = document.forms['quizForm']['q1'].value;
+  var q2 = document.forms['quizForm']['q2'].value;
+  var q3 = document.forms['quizForm']['q3'].value;
+  var q4 = document.forms['quizForm']['q4'].value;
+  var q5 = document.forms['quizForm']['q5'].value;
+  var q6 = document.forms['quizForm']['q6'].value;
+  var q7 = document.forms['quizForm']['q7'].value;
+  var q8 = document.forms['quizForm']['q8'].value;
+  var q9 = document.forms['quizForm']['q9'].value;
+  var q10 = document.forms['quizForm']['q10'].value;
+
+  // Validation
+  for (var i = 1; i <= total; i++) {
+    if (eval('q' + i) == null || eval('q' + i) == '') {
+      alert('Bạn chưa chọn câu trả lời cho câu thứ ' + i);
+      return false;
+    }
+  }
+
+
+  for (var i = 1; i <= total; i++) {
+    score += parseInt(eval('q' + i))   
+   
+  }
+
+  if (score <= total*1)
+  { 
+    alert('Phương pháp học tập của bạn đạt được hiệu quả cao. Bạn hãy phát huy những phương pháp học tập sẵn có và chia sẻ phương pháp học tập của mình cùng các bạn nhé'); // chọn toàn C
+    return;
+  }
+
+    if (score >= total*3){ 
+    alert('Phương pháp học tập của bạn chưa đạt hiệu quả, bạn cần phải xem xét lại phương pháp, mục tiêu học tập của mình');// chọn toàn A
+    return;
+    }
+
+    alert('Phương pháp học tập của bạn đạt hiệu quả, bạn nên phát huy những điểm mạnh sẵn có và tìm hiểu thêm phương pháp học tập mới để đạt hiệu quả cao hơn')
+
+    return false;
+}
+</script>
