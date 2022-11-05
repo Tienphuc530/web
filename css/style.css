@@ -19,7 +19,7 @@ a{
 }
 p{
   font-size: 20px;
-  /* text-align: justify; */
+  text-align: justify;
   color: rgb(12, 35, 245);
 }
 header, main, footer {
@@ -52,7 +52,7 @@ main ul li a {
 
 .banner-left, .banner-right{
   position: fixed; /* Giúp cố định một chỗ dù có kéo trình duyệt */
-  top: 120px; /* chưa khoảng cách trên trình duyệt */
+  top: 120px; /* chừa khoảng cách trên trình duyệt */
 }
 .banner-left img, .banner-right img{
   width: 160px;
