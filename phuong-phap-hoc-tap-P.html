@@ -53,7 +53,7 @@
           <br />
           <br /><br />
 
-          <h3>3. Khi gặp bài khó, em thường:c</h3>
+          <h3>3. Khi gặp bài khó, em thường:</h3>
           <input type="radio" name="q3" value="3" />A. Bỏ qua hoặc nản 
           <br />
           <input type="radio" name="q3" value="2"  />B. Hỏi bạn hoặc thầy cô
@@ -81,47 +81,47 @@
           <br /><br />
 
           <h3> 6. Em ôn lại bài học:</h3>
-          <input type="radio" name="q6" value="3" />A. Không phù hợp 
+          <input type="radio" name="q6" value="3" />A. Chỉ khi sắp kiểm tra
           <br />
-          <input type="radio" name="q6" value="2"  />B. Phù hợp trong một vài trường hợp
+          <input type="radio" name="q6" value="2"  />B. Khi có thời gian
           <br />
-          <input type="radio" name="q6" value="1"  />C. Hoàn toàn phù hợp
-          <br />
-          <br /><br />
-
-          <h3> 7. Tôi chủ động đặt câu hỏi khi chưa nắm vững kiến thức</h3>
-          <input type="radio" name="q7" value="3" />A. Không phù hợp 
-          <br />
-          <input type="radio" name="q7" value="2"  />B. Phù hợp trong một vài trường hợp
-          <br />
-          <input type="radio" name="q7" value="1"  />C. Hoàn toàn phù hợp
+          <input type="radio" name="q6" value="1"  />C. Thường xuyên
           <br />
           <br /><br />
 
-          <h3> 8. Tôi thích giúp đỡ những bạn gặp khó khăn trong học tập</h3>
-          <input type="radio" name="q8" value="3" />A. Không phù hợp 
+          <h3> 7. Khi học nhóm, em:</h3>
+          <input type="radio" name="q7" value="3" />A. Ít tham gia trao đổi 
           <br />
-          <input type="radio" name="q8" value="2"  />B. Phù hợp trong một vài trường hợp
+          <input type="radio" name="q7" value="2"  />B. Tham gia khi được yêu cầu
           <br />
-          <input type="radio" name="q8" value="1"  />C. Hoàn toàn phù hợp
-          <br />
-          <br /><br />
-
-          <h3> 9. Tôi thích đọc sách, sử dụng máy tính và khám phá Internet để mở rộng kiến thức</h3>
-          <input type="radio" name="q9" value="3" />A. Không phù hợp 
-          <br />
-          <input type="radio" name="q9" value="2"  />B. Phù hợp trong một vài trường hợp
-          <br />
-          <input type="radio" name="q9" value="1"  />C. Hoàn toàn phù hợp
+          <input type="radio" name="q7" value="1"  />C. Chủ động chia sẻ ý kiến
           <br />
           <br /><br />
 
-          <h3> 10. Tôi luôn thực hiện tốt học đi đôi với hành</h3>
-          <input type="radio" name="q10" value="3" />A. Không phù hợp 
+          <h3> 8. Em sử dụng điện thoại/máy tính cho học tập:</h3>
+          <input type="radio" name="q8" value="3" />A. Ít hiệu quả
           <br />
-          <input type="radio" name="q10" value="2"  />B. Phù hợp trong một vài trường hợp
+          <input type="radio" name="q8" value="2"  />B. Tạm đáp ứng
           <br />
-          <input type="radio" name="q10" value="1"  />C. Hoàn toàn phù hợp
+          <input type="radio" name="q8" value="1"  />C. Hiệu quả, đúng mục đích
+          <br />
+          <br /><br />
+
+          <h3> 9. Em có thói quen tự đánh giá kết quả học:</h3>
+          <input type="radio" name="q9" value="3" />A. Không quan tâm
+          <br />
+          <input type="radio" name="q9" value="2"  />B. Có suy nghĩ nhưng chưa rõ
+          <br />
+          <input type="radio" name="q9" value="1"  />C. Thường xuyên tự điều chỉnh
+          <br />
+          <br /><br />
+
+          <h3> 10. Nhìn chung, em thấy cách học của mình:</h3>
+          <input type="radio" name="q10" value="3" />A. Chưa phù hợp
+          <br />
+          <input type="radio" name="q10" value="2"  />B. Tương đối phù hợp
+          <br />
+          <input type="radio" name="q10" value="1"  />C. Phù hợp và hiệu quả
           <br />
           <br /><br />
 
@@ -179,16 +179,16 @@ function submitAnswers() {
 
   if (score <= total*1)
   { 
-    alert('Phương pháp học tập của bạn đạt được hiệu quả cao. Bạn hãy phát huy những phương pháp học tập sẵn có và chia sẻ phương pháp học tập của mình cùng các bạn nhé'); // chọn toàn C
+    alert('Phương pháp học tập của bạn cho thấy em đang gặp nhiều khó khăn trong học tập. Em nên liên hệ giáo viên tư vấn tâm lí để định hướng lại việc học tập'); // chọn toàn C
     return;
   }
 
     if (score >= total*3){ 
-    alert('Phương pháp học tập của bạn chưa đạt hiệu quả, bạn cần phải xem xét lại phương pháp, mục tiêu học tập của mình');// chọn toàn A
+    alert('Phương pháp học tập của em có khả năng tốt và định hướng khá rõ ràng trong học tập. Em tiếp tục phát triển thế mạnh để bắt đầu xây dựng lộ trình cá nhân');// chọn toàn A
     return;
     }
 
-    alert('Phương pháp học tập của bạn đạt hiệu quả, bạn nên phát huy những điểm mạnh sẵn có và tìm hiểu thêm phương pháp học tập mới để đạt hiệu quả cao hơn')
+    alert('Em có nền tảng nhưng cần được hướng dẫn thêm để phát huy tốt hơn để hoàn thiện các kỹ năng còn yếu')
 
     return false;
 }
