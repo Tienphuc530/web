@@ -7,7 +7,7 @@ header section{
 header {
 
   text-align: center;
-  background: url("../images/3.jpeg");
+  background: url("../images/vip2.jpg");
   height: 300px; 
   display: flex; /*hiển thị tự động text trong header theo trên dưới */
   align-items: center; /* căn chỉnh text vào giữa hộp */
